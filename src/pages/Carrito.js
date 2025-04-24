@@ -15,7 +15,7 @@ function ShoppingCart() {
 
   const fetchInventory = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/inventory");
+      const response = await fetch("https://backend2025tienda.vercel.app/api/inventory");
       const data = await response.json();
       setItems(data);
     } catch (error) {
@@ -25,7 +25,7 @@ function ShoppingCart() {
 
   const fetchUser = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch("https://backend2025tienda.vercel.app/api/auth/user", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ function ShoppingCart() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/purchase", {
+      const response = await fetch("https://backend2025tienda.vercel.app/api/purchase", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

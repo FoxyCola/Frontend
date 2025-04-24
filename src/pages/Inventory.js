@@ -12,7 +12,7 @@ function Inventory() {
   // Obtener productos
   const fetchInventory = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/inventory");
+      const response = await fetch("https://backend2025tienda.vercel.app/api/inventory");
       const data = await response.json();
       setItems(data);
     } catch (error) {
@@ -30,8 +30,8 @@ function Inventory() {
     e.preventDefault();
     const method = editingId ? "PUT" : "POST";
     const url = editingId
-      ? `http://localhost:5000/api/inventory/${editingId}`
-      : "http://localhost:5000/api/inventory";
+      ? `https://backend2025tienda.vercel.app/api/inventory/${editingId}`
+      : "https://backend2025tienda.vercel.app/api/inventory";
 
     try {
       const response = await fetch(url, {
@@ -54,7 +54,7 @@ function Inventory() {
   const handleDelete = async (id) => {
     if (!window.confirm("¿Seguro que quieres eliminar este producto?")) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/inventory/${id}`, {
+      const response = await fetch(`https://backend2025tienda.vercel.app/api/inventory/${id}`, {
         method: "DELETE",
       });
 

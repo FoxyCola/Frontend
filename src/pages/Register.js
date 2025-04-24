@@ -38,7 +38,7 @@ function Register() {
     setMessage("");
 
     try {
-      const response = await fetch("https://backend2025tienda.vercel.app/api/auth/register", {
+      const response = await fetch("https://backend2025tienda.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

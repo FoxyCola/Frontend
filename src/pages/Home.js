@@ -12,7 +12,7 @@ function Home() {
     setMessage("");
 
     try {
-      const response = await fetch("https://backend2025tienda.vercel.app/api/auth/login", {
+      const response = await fetch("https://backend2025tienda.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

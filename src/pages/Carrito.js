@@ -15,7 +15,7 @@ function ShoppingCart() {
 
   const fetchInventory = async () => {
     try {
-      const response = await fetch("https://backend2025tienda.vercel.app/api/inventory");
+      const response = await fetch("https://backend2025tienda.onrender.com/api/inventory");
       const data = await response.json();
       setItems(data);
     } catch (error) {
@@ -25,7 +25,7 @@ function ShoppingCart() {
 
   const fetchUser = async () => {
     try {
-      const response = await fetch("https://backend2025tienda.vercel.app/api/auth/user", {
+      const response = await fetch("https://backend2025tienda.onrender.com/api/auth/user", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ function ShoppingCart() {
     }
 
     try {
-      const response = await fetch("https://backend2025tienda.vercel.app/api/purchase", {
+      const response = await fetch("https://backend2025tienda.onrender.com/api/purchase", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

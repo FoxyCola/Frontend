@@ -1,0 +1,43 @@
+/* Home.css */
+
+/* Fondo azul claro que cubre toda la pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-color: #ADD8E6; /* Azul claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Puedes cambiar la fuente si lo prefieres */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Color del texto */
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; /* Espacio entre el título y los botones */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #87CEEB; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+  }
+  
